@@ -6,9 +6,7 @@
     font-weight: 500;
 }
 
-nav{
-    background-color: rgb(21, 40, 48);
-    }
+nav{background-color: rgb(21, 40, 48);}
 
 header h1{
     background-color: rgb(54, 181, 209);
@@ -45,17 +43,16 @@ nav ul li:first-child {
 }
 
 nav a {
-text-decoration: none;
-color: rgb(54, 181, 209);
-border-bottom: 2px solid rgb(54, 181, 209);
+    text-decoration: none;
+    color: rgb(54, 181, 209);
+    border-bottom: 2px solid rgb(54, 181, 209);
 }
 
 nav a:hover  {border-bottom:none;}
 
 @media screen and (max-width: 564px) {
     nav ul li {
-        
-        margin: 0px;
+         margin: 0px;
         transition: all 1s ease-in-out;
        }
 }
@@ -92,23 +89,69 @@ header .header-image h2 {
 
 .container {
     display: flex;
-    padding: 15px 40px 15px 45px;
+    padding: 15px 40px 15px 40px;
     color: rgb(21, 40, 48);
 }
+
 
 .container h1 {
     width: 130px;
     padding:10px; 
     text-align: end;
- 
-}
+ }
 
 .container p {
-    padding:10px; 
+    padding: 10px; 
     border-color: rgb(21, 40, 48);
     border-left-style: solid;
     border-width: 2.5px;
 }
+
+
+
+.work-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows:400px 130px 130px;
+    gap: 10px;
+    grid-template-areas: "header header";
+    border-color: rgb(21, 40, 48);
+    border-left-style: solid;
+    border-width: 2.5px;
+    padding-left: 10px;
+}
+
+.work1 {
+    grid-area: header;
+    border: 3px solid rgb(54, 181, 209);
+    background-image: url("/assets/images/yahoo.jpg");
+    background-size: cover;
+}
+
+.work2 {
+border: 3px solid rgb(54, 181, 209);
+}
+
+.work3 {
+    border: 3px solid rgb(54, 181, 209);
+}
+
+.work4 {
+    border: 3px solid rgb(54, 181, 209);
+}
+
+.work5 {
+    border: 3px solid rgb(54, 181, 209);
+}
+
+
+
+
+
+
+
+
 
 footer .container h1 {
     border-color: rgb(21, 40, 48);
@@ -133,12 +176,29 @@ footer ul {
 
 footer ul li{
     border-bottom: 2px solid rgb(21, 40, 48);
-    margin: 0px;
+    margin: 5px;
     padding: 5px;
  
 }
 
 footer li:hover  {border-bottom:none;}
 
-
-
+@media screen and (max-width: 564px) {
+    .container {display: inline-block}
+    footer .container h1 {border-right-style: hidden;}
+    .container p {border-left-style: hidden;}
+    .container h1 {
+        white-space: nowrap;
+        text-align: left;
+        border-bottom: 2.5px solid rgb(21, 40, 48) ;
+        padding-left: 0px ;
+        padding-right: 0px ;
+        margin-right: 0px;
+        margin-left: 0px;
+        width:auto;}
+    }           
+main, footer{
+    max-width: 960px;
+    margin: auto;
+}
+    
