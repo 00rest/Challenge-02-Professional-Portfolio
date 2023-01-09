@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    font-weight: 500;
+}
+
+nav{
+    background-color: rgb(21, 40, 48);
+    }
+
+header h1{
+    background-color: rgb(54, 181, 209);
+    color: rgb(21, 40, 48));
+    padding: 4px 7px 4px 50px;
+    margin: 10px 0px 20px 0px;
+    white-space: nowrap;
+    font-size: xx-large;
+}
+
+.header-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav ul {
+    flex-grow: 1;
+    text-align: end;
+}
+
+ul li {
+    display: inline-block;
+    list-style-type: none;
+    padding: 5px;
+    margin-top: 25px; 
+}
+
+nav ul li:last-child {
+    margin-right: 15px;
+}
+
+nav ul li:first-child {
+    margin-left: 15px;
+}
+
+nav a {
+text-decoration: none;
+color: rgb(54, 181, 209);
+border-bottom: 2px solid rgb(54, 181, 209);
+}
+
+nav a:hover  {border-bottom:none;}
+
+@media screen and (max-width: 564px) {
+    nav ul li {
+        
+        margin: 0px;
+        transition: all 1s ease-in-out;
+       }
+}
+
+@media screen and (max-width: 534px) {
+    nav ul li:last-child {margin-right: 0px;}
+    nav ul li:first-child {margin-left: 0px;}
+}
+
+@media screen and (max-width: 300px) {
+    nav ul li {display: block;}
+    
+}
+
+.header-image {
+    background-image: url("/assets/images/header5.jpg");
+    background-size: cover
+}
+
+.header-image {
+    padding: 70px 30px 60px 0px;
+  }
+
+header .header-image h2 {
+    margin: 0px;
+    padding: 5px;
+    float: right;
+    background-color: rgb(54, 181, 209);
+    color: rgb(21, 40, 48);
+    font-weight: 500;
+    font-size: x-large;
+    white-space: nowrap;
+}
+
+.container {
+    display: flex;
+    padding: 15px 40px 15px 45px;
+    color: rgb(21, 40, 48);
+}
+
+.container h1 {
+    width: 130px;
+    padding:10px; 
+    text-align: end;
+ 
+}
+
+.container p {
+    padding:10px; 
+    border-color: rgb(21, 40, 48);
+    border-left-style: solid;
+    border-width: 2.5px;
+}
+
+footer .container h1 {
+    border-color: rgb(21, 40, 48);
+    border-right-style: solid;
+    border-width: 2.5px;
+}
+
+footer a {
+    text-decoration: none;
+    color: rgb(21, 40, 48);
+    font-weight: 500;
+}
+
+footer ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-grow: 1;
+    flex-wrap: wrap;
+}
+
+
+footer ul li{
+    border-bottom: 2px solid rgb(21, 40, 48);
+    margin: 0px;
+    padding: 5px;
+ 
+}
+
+footer li:hover  {border-bottom:none;}
+
+
+
