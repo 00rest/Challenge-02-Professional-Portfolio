@@ -130,19 +130,28 @@ header .header-image h2 {
 }
 
 .work2 {
-border: 3px solid rgb(54, 181, 209);
+    border: 3px solid rgb(54, 181, 209);
+    background-image: url("/assets/images/spotify.jpg");
+    background-size: cover;
 }
+
 
 .work3 {
     border: 3px solid rgb(54, 181, 209);
+    background-image: url("/assets/images/ebay.jpg");
+    background-size: cover;
 }
 
 .work4 {
     border: 3px solid rgb(54, 181, 209);
+    background-image: url("/assets/images/amazon.jpg");
+    background-size: cover;
 }
 
 .work5 {
     border: 3px solid rgb(54, 181, 209);
+    background-image: url("/assets/images/citibank.jpg");
+    background-size: cover;
 }
 
 
