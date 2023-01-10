@@ -60,7 +60,7 @@ nav a:hover  {box-shadow: 3px 3px 10px rgb(54, 181, 209)}
 }
 
 .header-image {
-    background-image: url("./images/header5.jpg");
+    background-image: url("../images/header5.jpg");
     background-size: cover
 }
 
@@ -132,16 +132,16 @@ font-size: large;
 
 .work1 {
     grid-area: header;
-    background-image: url("/images/yahoo.jpg");
+    background-image: url("../images/yahoo.jpg");
 }
 
-.work2 {background-image: url("./assets/images/spotify.jpg");}
+.work2 {background-image: url("../assets/images/spotify.jpg");}
 
-.work3 {background-image: url("/images/ebay.jpg");}
+.work3 {background-image: url("../images/ebay.jpg");}
 
-.work4 {background-image: url("./images/amazon.jpg");}
+.work4 {background-image: url("../images/amazon.jpg");}
 
-.work5 {background-image: url("./images/citibank.jpg");}
+.work5 {background-image: url("../images/citibank.jpg");}
 
 
 footer .container h1 {
