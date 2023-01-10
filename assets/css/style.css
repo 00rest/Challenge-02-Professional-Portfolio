@@ -144,7 +144,7 @@ header .header-image h2 {
 
 .work4 {
     border: 3px solid rgb(54, 181, 209);
-    background-image: url("/assets/images/amazon.jpg");
+    background-image: url("/assets/images/amazon-copy.jpg");
     background-size: cover;
 }
 
@@ -153,13 +153,6 @@ header .header-image h2 {
     background-image: url("/assets/images/citibank.jpg");
     background-size: cover;
 }
-
-
-
-
-
-
-
 
 
 footer .container h1 {
