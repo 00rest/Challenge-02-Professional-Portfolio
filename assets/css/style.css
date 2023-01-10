@@ -132,12 +132,12 @@ font-size: large;
 
 .work1 {
     grid-area: header;
-    background-image: url("./images/yahoo.jpg");
+    background-image: url("/images/yahoo.jpg");
 }
 
-.work2 {background-image: url("./images/spotify.jpg");}
+.work2 {background-image: url("./assets/images/spotify.jpg");}
 
-.work3 {background-image: url("./images/ebay.jpg");}
+.work3 {background-image: url("/images/ebay.jpg");}
 
 .work4 {background-image: url("./images/amazon.jpg");}
 
