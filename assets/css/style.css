@@ -8,9 +8,9 @@
 
 nav{background-color: rgb(21, 40, 48);}
 
-header h1{
+.work-container a, header h1{
     background-color: rgb(54, 181, 209);
-    color: rgb(21, 40, 48));
+    color: rgb(21, 40, 48);
     padding: 4px 7px 4px 50px;
     margin: 10px 0px 20px 0px;
     white-space: nowrap;
@@ -48,14 +48,7 @@ nav a {
     border-bottom: 2px solid rgb(54, 181, 209);
 }
 
-nav a:hover  {border-bottom:none;}
-
-@media screen and (max-width: 564px) {
-    nav ul li {
-         margin: 0px;
-        transition: all 1s ease-in-out;
-       }
-}
+nav a:hover  {box-shadow: 3px 3px 10px rgb(54, 181, 209)}
 
 @media screen and (max-width: 534px) {
     nav ul li:last-child {margin-right: 0px;}
@@ -63,8 +56,7 @@ nav a:hover  {border-bottom:none;}
 }
 
 @media screen and (max-width: 300px) {
-    nav ul li {display: block;}
-    
+    nav ul li {display: block;}  
 }
 
 .header-image {
@@ -89,7 +81,7 @@ header .header-image h2 {
 
 .container {
     display: flex;
-    padding: 15px 40px 15px 40px;
+    padding: 15px 35px 15px 35px;
     color: rgb(21, 40, 48);
 }
 
@@ -100,7 +92,7 @@ header .header-image h2 {
     text-align: end;
  }
 
-.container p {
+ .work-container, .container p {
     padding: 10px; 
     border-color: rgb(21, 40, 48);
     border-left-style: solid;
@@ -110,49 +102,34 @@ header .header-image h2 {
 
 
 .work-container {
-    width: 100%;
+    width: 100vw;
     display: grid;
     grid-template-columns: 1fr 1fr ;
     grid-template-rows:400px 130px 130px;
     gap: 10px;
     grid-template-areas: "header header";
-    border-color: rgb(21, 40, 48);
-    border-left-style: solid;
-    border-width: 2.5px;
-    padding-left: 10px;
 }
+
+.work {
+    border: 3px solid rgb(54, 181, 209);
+    background-size: cover;
+    box-shadow: 3px 3px 10px rgb(21, 40, 48);
+}
+
+.work:hover  {box-shadow:none;}
 
 .work1 {
     grid-area: header;
-    border: 3px solid rgb(54, 181, 209);
     background-image: url("/assets/images/yahoo.jpg");
-    background-size: cover;
 }
 
-.work2 {
-    border: 3px solid rgb(54, 181, 209);
-    background-image: url("/assets/images/spotify.jpg");
-    background-size: cover;
-}
+.work2 {background-image: url("/assets/images/spotify.jpg");}
 
+.work3 {background-image: url("/assets/images/ebay.jpg");}
 
-.work3 {
-    border: 3px solid rgb(54, 181, 209);
-    background-image: url("/assets/images/ebay.jpg");
-    background-size: cover;
-}
+.work4 {background-image: url("/assets/images/amazon.jpg");}
 
-.work4 {
-    border: 3px solid rgb(54, 181, 209);
-    background-image: url("/assets/images/amazon-copy.jpg");
-    background-size: cover;
-}
-
-.work5 {
-    border: 3px solid rgb(54, 181, 209);
-    background-image: url("/assets/images/citibank.jpg");
-    background-size: cover;
-}
+.work5 {background-image: url("/assets/images/citibank.jpg");}
 
 
 footer .container h1 {
@@ -161,10 +138,23 @@ footer .container h1 {
     border-width: 2.5px;
 }
 
-footer a {
+.work-container a, footer a {
     text-decoration: none;
     color: rgb(21, 40, 48);
     font-weight: 500;
+}
+
+.work {
+    display: flex;
+    align-items:end;
+}
+
+
+.work a {
+    font-size: larger;
+    font-weight: bold;
+    border: 3px solid rgb(54, 181, 209);
+    box-shadow: 3px 3px 5px rgb(21, 40, 48);
 }
 
 footer ul {
@@ -177,18 +167,25 @@ footer ul {
 
 
 footer ul li{
-    border-bottom: 2px solid rgb(21, 40, 48);
     margin: 5px;
     padding: 5px;
- 
-}
+    box-shadow: 3px 3px 7px rgb(21, 40, 48);
+ }
 
-footer li:hover  {border-bottom:none;}
+footer li:hover {border-bottom:2px solid rgb(21, 40, 48);}
 
 @media screen and (max-width: 564px) {
     .container {display: inline-block}
     footer .container h1 {border-right-style: hidden;}
     .container p {border-left-style: hidden;}
+    .work-container {
+        border-left-style: hidden;
+        width: 85vw; }
+    .work-container {
+        width: 85vw;
+        grid-template-columns: 1fr;
+        grid-template-rows:400px 130px 130px 130px 130px;
+        grid-template-areas: "header";}    
     .container h1 {
         white-space: nowrap;
         text-align: left;
@@ -198,9 +195,12 @@ footer li:hover  {border-bottom:none;}
         margin-right: 0px;
         margin-left: 0px;
         width:auto;}
-    }           
+    nav ul li {
+        margin: 0px;
+        transition: all 1s ease-in-out;}
+    }
+
 main, footer{
     max-width: 960px;
     margin: auto;
 }
-    
