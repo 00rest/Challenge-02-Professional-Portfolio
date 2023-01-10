@@ -79,6 +79,18 @@ header .header-image h2 {
     white-space: nowrap;
 }
 
+img{
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    border: 1px solid rgb(54, 181, 209);
+}
+p{
+    line-height: 1.2;
+font-size: large;
+}
+
+
 .container {
     display: flex;
     padding: 15px 35px 15px 35px;
