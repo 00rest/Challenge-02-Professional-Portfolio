@@ -132,7 +132,7 @@ font-size: large;
 
 .work1 {
     grid-area: header;
-    background-image: url("/assets/images/top-movie-page.jpg");
+    background-image: url("../images/top-movie-page.jpg");
 }
 
 .work2 {background-image: url("../images/spotify.jpg");}
